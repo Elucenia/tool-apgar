@@ -1,9 +1,11 @@
-/* ELUCENIA standalone integration. Source package metadata and rights: README.md. */
+/* tool-apgar · Elucenia · https://github.com/Elucenia/tool-apgar
+   Copyright (c) 2026 Elucenia · Felipe Guedes (fgxdev.com). Licensed under the Apache License 2.0: keep this notice and the NOTICE file, and mark your changes.
+   Standalone integration. Package metadata and rights: README.md. */
 (function(root){'use strict';
 function freeze(value){if(value&&typeof value==='object'){for(const item of Object.values(value))freeze(item);Object.freeze(value);}return value;}
 const TOOL=freeze({"id":"apgar","title":"Escore de Apgar","fields":[["fc","Frequência cardíaca","radio",{"opts":{"0":"Ausente","1":"&lt; 100 bpm","2":"≥ 100 bpm"}}],["resp","Esforço respiratório","radio",{"opts":{"0":"Ausente","1":"Lento, irregular","2":"Bom, choro forte"}}],["tonus","Tônus muscular","radio",{"opts":{"0":"Flácido","1":"Alguma flexão","2":"Movimentos ativos"}}],["reflexo","Irritabilidade reflexa","radio",{"opts":{"0":"Sem resposta","1":"Careta","2":"Choro, tosse ou espirro"}}],["cor","Cor","radio",{"opts":{"0":"Cianose ou palidez","1":"Corpo róseo, extremidades cianóticas","2":"Completamente róseo"}}]],"config":{"unit":"de 10","label":"Apgar","fields":[["fc","radio",0],["resp","radio",0],["tonus","radio",0],["reflexo","radio",0],["cor","radio",0]],"bands":[[0,"high","Apgar baixo (0 a 3)","Reanimação já deve estar em curso. Apgar ≤ 5 aos 5 minutos: colher gasometria do cordão e manter avaliação a cada 5 minutos até 20 minutos."],[4,"mid","Moderadamente anormal (4 a 6)","Se persistir aos 5 minutos, reavaliar a cada 5 minutos até 20 minutos de vida."],[7,"low","Tranquilizador (7 a 10)",""]]},"reviewStatus":"needs-review","clinicalValidation":"not-performed"});
 const window={};
-/* ELUCENIA arithmetic registry. No DOM access, storage, telemetry or network requests. */
+/* Elucenia arithmetic registry. No DOM access, storage, telemetry or network requests. */
 (function(root){
   'use strict';
   const CALC={fn:Object.create(null)};
