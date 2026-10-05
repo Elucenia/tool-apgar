@@ -3,14 +3,14 @@
     "id": "apgar",
     "title": "Escore de Apgar",
     "short": "Avaliação do recém-nascido no 1º e 5º minutos",
+    "desc": "Calcule o escore de Apgar do recém-nascido (frequência cardíaca, respiração, tônus, irritabilidade reflexa e cor) com a interpretação da AAP e da ACOG.",
+    "lead": "Descreve de forma padronizada as condições do recém-nascido no 1º e no 5º minuto de vida (e a cada 5 minutos, se menor que 7).",
+    "kind": "Escore",
     "spec": [
       "pediatria",
       "ginecologia-e-obstetricia",
       "anestesiologia"
     ],
-    "tier": 1,
-    "desc": "Calcule o escore de Apgar do recém-nascido (frequência cardíaca, respiração, tônus, irritabilidade reflexa e cor) com a interpretação da AAP e da ACOG.",
-    "lead": "Descreve de forma padronizada as condições do recém-nascido no 1º e no 5º minuto de vida (e a cada 5 minutos, se menor que 7).",
     "fields": [
       [
         "fc",
@@ -73,55 +73,7 @@
         }
       ]
     ],
-    "score": {
-      "label": "Apgar",
-      "unit": "de 10",
-      "bands": [
-        [
-          0,
-          "high",
-          "Apgar baixo (0 a 3)",
-          "Reanimação já deve estar em curso. Apgar ≤ 5 aos 5 minutos: colher gasometria do cordão e manter avaliação a cada 5 minutos até 20 minutos."
-        ],
-        [
-          4,
-          "mid",
-          "Moderadamente anormal (4 a 6)",
-          "Se persistir aos 5 minutos, reavaliar a cada 5 minutos até 20 minutos de vida."
-        ],
-        [
-          7,
-          "low",
-          "Tranquilizador (7 a 10)",
-          ""
-        ]
-      ]
-    },
     "formula": "<p>Cinco sinais, cada um de 0 a 2 pontos: <strong>frequência cardíaca</strong>, <strong>esforço respiratório</strong>, <strong>tônus</strong>, <strong>irritabilidade reflexa</strong> e <strong>cor</strong>. Total de 0 a 10, aplicado no 1º e no 5º minuto; se o 5º minuto for &lt; 7, repetir a cada 5 minutos até 20 minutos.</p>",
-    "table": [
-      [
-        "Pontos",
-        "Interpretação (AAP/ACOG 2015)"
-      ],
-      [
-        "7 a 10",
-        "Tranquilizador"
-      ],
-      [
-        "4 a 6",
-        "Moderadamente anormal"
-      ],
-      [
-        "0 a 3",
-        "Baixo"
-      ]
-    ],
-    "tips": [
-      "Não espere o 1º minuto para reanimar: a decisão de iniciar a ventilação é tomada nos primeiros 60 segundos pela respiração, frequência cardíaca e tônus (Programa de Reanimação Neonatal da SBP).",
-      "O Apgar sozinho não diagnostica asfixia nem prediz desfecho neurológico individual; Apgar &lt; 5 aos 5 e aos 10 minutos aumenta o risco de paralisia cerebral.",
-      "Prematuridade, sedação/anestesia materna, malformações e infecção reduzem o escore sem significar asfixia (tônus e irritabilidade são menores no prematuro).",
-      "Durante a reanimação, registre o escore \"assistido\" (expandido), indicando as intervenções em curso em cada minuto."
-    ],
     "sources": [
       [
         "Apgar V. A proposal for a new method of evaluation of the newborn infant. Curr Res Anesth Analg, 1953 (republicado em Anesth Analg, 2015).",
@@ -130,6 +82,10 @@
       [
         "American Academy of Pediatrics; American College of Obstetricians and Gynecologists. The Apgar Score. Pediatrics, 2015.",
         "https://doi.org/10.1542/peds.2015-2651"
+      ],
+      [
+        "AAP/ACOG2015;DOI10.1542/peds.2015-2651",
+        "https://publications.aap.org/pediatrics/article/136/4/819/73821/The-Apgar-Score"
       ]
     ],
     "cases": [
@@ -190,59 +146,6 @@
         }
       ]
     ],
-    "kind": "Escore",
-    "config": {
-      "unit": "de 10",
-      "label": "Apgar",
-      "fields": [
-        [
-          "fc",
-          "radio",
-          0
-        ],
-        [
-          "resp",
-          "radio",
-          0
-        ],
-        [
-          "tonus",
-          "radio",
-          0
-        ],
-        [
-          "reflexo",
-          "radio",
-          0
-        ],
-        [
-          "cor",
-          "radio",
-          0
-        ]
-      ],
-      "bands": [
-        [
-          0,
-          "high",
-          "Apgar baixo (0 a 3)",
-          "Reanimação já deve estar em curso. Apgar ≤ 5 aos 5 minutos: colher gasometria do cordão e manter avaliação a cada 5 minutos até 20 minutos."
-        ],
-        [
-          4,
-          "mid",
-          "Moderadamente anormal (4 a 6)",
-          "Se persistir aos 5 minutos, reavaliar a cada 5 minutos até 20 minutos de vida."
-        ],
-        [
-          7,
-          "low",
-          "Tranquilizador (7 a 10)",
-          ""
-        ]
-      ]
-    },
-    "clinicalReview": "pending",
     "arithmeticTest": {
       "status": "passed",
       "testedAt": "2026-09-25",
@@ -251,17 +154,221 @@
       "failures": []
     },
     "independentArithmeticTest": {
-      "status": "not-tested",
-      "testedAt": null,
-      "total": 0,
-      "passed": 0,
-      "cases": []
+      "status": "passed",
+      "testedAt": "2026-10-04T13:08:00.439Z",
+      "total": 243,
+      "passed": 243,
+      "evidencePath": "reports/review-20261003/eight-additive-source-oracles-final23.json",
+      "evidenceSha256": "52360ca4cccc7b095b0de3b199fffda2e646b7a4dc92f325aa71eec61c4c7dfe",
+      "peerEvidencePath": "reports/review-20261003/eight-additive-source-oracles-independent-review-final23.json",
+      "peerEvidenceSha256": "64ff546626e0559b4f05f5eceb47e9cae355bfe7bc67f82744dbc3db60644f14",
+      "scope": "Entered discrete-point sum/count only. Original/full method conformance, input clinical adjudication, diagnostic/management decisions, prognosis, professional translations, rights and release approval are outside this test. Source-access and variant limits are retained.",
+      "source": {
+        "keys": [
+          "fc",
+          "resp",
+          "tonus",
+          "reflexo",
+          "cor"
+        ],
+        "kind": "ordinal",
+        "domain": [
+          0,
+          1,
+          2
+        ],
+        "url": "https://www.acog.org/clinical/clinical-guidance/committee-opinion/articles/2015/10/the-apgar-score",
+        "edition": "AAP/ACOG Committee Opinion644,2015, reaffirmed2025; neonatal Apgar point sum",
+        "locator": "Introduction: five components, each0/1/2",
+        "access": "Official primary organizational full-text indexed in the search response read2026-10-04; a separate direct retrieval returned an internal error. Sum only; not current resuscitation recommendations, diagnosis of asphyxia or outcome prediction."
+      },
+      "implementations": [
+        {
+          "app": "website",
+          "id": "apgar",
+          "sha256": "7820cadf9159d043053484d99d0b1f8cd1648541b5e6445333ffb43140f5e39a"
+        },
+        {
+          "app": "dashboard",
+          "id": "apgar",
+          "sha256": "7820cadf9159d043053484d99d0b1f8cd1648541b5e6445333ffb43140f5e39a"
+        },
+        {
+          "app": "command-center",
+          "id": "apgar",
+          "sha256": "7820cadf9159d043053484d99d0b1f8cd1648541b5e6445333ffb43140f5e39a"
+        }
+      ],
+      "qualifications": [],
+      "clinicalApproval": "not-performed",
+      "professionalLanguageApproval": "not-performed",
+      "sourceRightsApproval": "not-performed",
+      "fullMethodConformance": "not-performed",
+      "publicCandidateBankOmitted": true
+    },
+    "methodVersion": "Apgar 1953:5 sinais 0–2; seguimento AAPACOG 2015 em 1/5 min e repetição se<7",
+    "implementationVersion": "apgar@native-2026-10-03+7820cadf9159",
+    "currentMethodSource": "https://pubmed.ncbi.nlm.nih.gov/25899272/",
+    "versionEvidence": {
+      "status": "variant-and-source-edition-recorded",
+      "checkedAt": "2026-10-03",
+      "implementedVariant": "Cinco sinais, cada um de 0 a 2 pontos: frequência cardíaca , esforço respiratório , tônus , irritabilidade reflexa e cor . Total de 0 a 10, aplicado no 1º e no 5º minuto; se o 5º minuto for < 7, repetir a cada 5 minutos até 20 minutos.",
+      "inputContract": {
+        "fields": [
+          {
+            "key": "fc",
+            "label": "Frequência cardíaca",
+            "type": "radio",
+            "optional": false,
+            "options": {
+              "0": "Ausente",
+              "1": "&lt; 100 bpm",
+              "2": "≥ 100 bpm"
+            }
+          },
+          {
+            "key": "resp",
+            "label": "Esforço respiratório",
+            "type": "radio",
+            "optional": false,
+            "options": {
+              "0": "Ausente",
+              "1": "Lento, irregular",
+              "2": "Bom, choro forte"
+            }
+          },
+          {
+            "key": "tonus",
+            "label": "Tônus muscular",
+            "type": "radio",
+            "optional": false,
+            "options": {
+              "0": "Flácido",
+              "1": "Alguma flexão",
+              "2": "Movimentos ativos"
+            }
+          },
+          {
+            "key": "reflexo",
+            "label": "Irritabilidade reflexa",
+            "type": "radio",
+            "optional": false,
+            "options": {
+              "0": "Sem resposta",
+              "1": "Careta",
+              "2": "Choro, tosse ou espirro"
+            }
+          },
+          {
+            "key": "cor",
+            "label": "Cor",
+            "type": "radio",
+            "optional": false,
+            "options": {
+              "0": "Cianose ou palidez",
+              "1": "Corpo róseo, extremidades cianóticas",
+              "2": "Completamente róseo"
+            }
+          }
+        ],
+        "hash": "b052b31d6f7984ed141ebd773b7f4f9d97dc4889f5b029c72ac09e2c5a35553e"
+      },
+      "sourceEditions": [
+        {
+          "citation": "Apgar V. A proposal for a new method of evaluation of the newborn infant. Curr Res Anesth Analg, 1953 (republicado em Anesth Analg, 2015).",
+          "url": "https://doi.org/10.1213/ANE.0b013e31829bdc5c",
+          "class": "primary-publication-abstract-or-metadata-read",
+          "publicationEditionConfirmed": true,
+          "fullTextRetrieved": false,
+          "formulaConformance": "not-assessed",
+          "publication": {
+            "title": "A Proposal for a New Method of Evaluation of the Newborn Infant. Originally published in July 1953, volume 32, pages 250-259.",
+            "year": "2015",
+            "firstPublicationDate": "2015-05-01",
+            "doi": "10.1213/ane.0b013e31829bdc5c",
+            "pmid": "25899272",
+            "journal": "Anesthesia and analgesia",
+            "authors": "Apgar V."
+          },
+          "primaryPublicationUrl": "https://pubmed.ncbi.nlm.nih.gov/25899272/",
+          "abstractAvailable": false,
+          "fullTextSha256": null,
+          "abstractSha256": null,
+          "matchedBy": "exact-DOI-or-PMID"
+        },
+        {
+          "citation": "American Academy of Pediatrics; American College of Obstetricians and Gynecologists. The Apgar Score. Pediatrics, 2015.",
+          "url": "https://doi.org/10.1542/peds.2015-2651",
+          "class": "primary-publication-abstract-or-metadata-read",
+          "publicationEditionConfirmed": true,
+          "fullTextRetrieved": false,
+          "formulaConformance": "not-assessed",
+          "publication": {
+            "title": "The Apgar Score.",
+            "year": "2015",
+            "firstPublicationDate": "2015-10-01",
+            "doi": "10.1542/peds.2015-2651",
+            "pmid": "26416932",
+            "journal": "Pediatrics",
+            "authors": "AMERICAN ACADEMY OF PEDIATRICS COMMITTEE ON FETUS AND NEWBORN, AMERICAN COLLEGE OF OBSTETRICIANS AND GYNECOLOGISTS COMMITTEE ON OBSTETRIC PRACTICE."
+          },
+          "primaryPublicationUrl": "https://pubmed.ncbi.nlm.nih.gov/26416932/",
+          "abstractAvailable": true,
+          "fullTextSha256": null,
+          "abstractSha256": "1e6fa2dec87fb6be56014d1d063fb67636716c75e2bae3dfcfabbd98a4ea4161",
+          "matchedBy": "exact-DOI-or-PMID"
+        }
+      ],
+      "publicationEditionConfirmed": true,
+      "fullFormulaConformanceReviewed": false,
+      "formulaConformance": "Not established by bibliographic identity or automatic full-text retrieval; retain independent arithmetic and clinical review as separate evidence.",
+      "independentArithmetic": {
+        "status": "passed",
+        "testedAt": "2026-10-04T13:08:00.439Z",
+        "total": 243,
+        "passed": 243,
+        "evidencePath": "reports/review-20261003/eight-additive-source-oracles-final23.json",
+        "scope": "Entered discrete-point sum/count only. Original/full method conformance, input clinical adjudication, diagnostic/management decisions, prognosis, professional translations, rights and release approval are outside this test. Source-access and variant limits are retained.",
+        "caseEvidence": {
+          "schema": "independentArithmeticTest.cases",
+          "recordedEvidenceSha256": "b0f8bedb7e7694d17112f77a3a50362f75c4fe6183e14a31a8d35a6c287d79c0"
+        }
+      },
+      "clinicalApproval": "not-performed",
+      "translationApproval": "not-performed",
+      "releaseApproval": "not-performed",
+      "implementationHash": "7820cadf9159d043053484d99d0b1f8cd1648541b5e6445333ffb43140f5e39a"
+    },
+    "limits": "Apgar registra a condição do recém-nascido e a resposta à ressuscitação; não define os passos iniciais da ressuscitação, não diagnostica asfixia e não prevê sozinho mortalidade ou desfecho neurológico individual. O escore atribuído durante ressuscitação não equivale ao obtido em respiração espontânea. Prematuridade, medicamentos maternos e variabilidade do exame podem influenciar o resultado.",
+    "limitsEvidence": {
+      "status": "primary-source-documentation-checked",
+      "sources": [
+        {
+          "url": "https://publications.aap.org/pediatrics/article/136/4/819/73821/The-Apgar-Score",
+          "edition": "AAP/ACOG2015;DOI10.1542/peds.2015-2651",
+          "sectionsActuallyRead": "Introduction, Limitations, Apgar and Resuscitation, Prediction of Outcome, Conclusions/Recommendations",
+          "access": "primary-readable-html"
+        }
+      ],
+      "clinicalValidation": "not-performed",
+      "professionalLanguageReview": "not-performed",
+      "arithmeticChanged": false
     }
   },
-  "review": {
-    "status": "needs-review",
-    "reason": "Revisão documental e clínica independente pendente.",
-    "clinicalValidation": "not-performed"
+  "currentSource": {
+    "file": "apps/website/private/tool-code/apgar/calculator.js",
+    "bytes": 5094,
+    "sha256": "7820cadf9159d043053484d99d0b1f8cd1648541b5e6445333ffb43140f5e39a"
   },
-  "clinicalValidation": "not-performed"
+  "sourceToolSha256": "e84549d8853b78dd42265c819fb63aa334098da78aaf6bc2774c6d8562a8015c",
+  "omittedFullReferenceBanks": [
+    {
+      "rows": 243,
+      "sha256": "54ba9c5bb13420dd5587f0b66430c1183a07ccc69933dc1316d307787270c6c6",
+      "reason": "Large independent reference bank not bundled; exact evidence scope and file references retained"
+    }
+  ],
+  "clinicalApproval": "not-performed",
+  "professionalLanguageApproval": "not-performed",
+  "sourceRightsApproval": "not-performed"
 }
