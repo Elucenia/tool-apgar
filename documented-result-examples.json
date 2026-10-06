@@ -1,0 +1,607 @@
+{
+  "id": "apgar",
+  "implementationVersion": "apgar@native-2026-10-05+d5c8d5e8b580",
+  "scope": "Rendered current output against the same source method; not an independent numerical/clinical oracle",
+  "locales": {
+    "pt-BR": [
+      {
+        "name": "Todos os sinais normais: 10 pontos",
+        "output": {
+          "rows": [],
+          "verdict": {
+            "text": "Tranquilizador (7 a 10)",
+            "locale": "pt-BR",
+            "template": "documented-source"
+          },
+          "level": "low"
+        }
+      },
+      {
+        "name": "FC ≥ 100, os outros com 1 ponto: 6 pontos",
+        "output": {
+          "rows": [],
+          "verdict": {
+            "text": "Moderadamente anormal (4 a 6)",
+            "locale": "pt-BR",
+            "template": "documented-source"
+          },
+          "note": {
+            "text": "Se persistir aos 5 minutos, reavaliar a cada 5 minutos até 20 minutos de vida.",
+            "locale": "pt-BR",
+            "template": "documented-source"
+          },
+          "level": "mid"
+        }
+      },
+      {
+        "name": "FC ≥ 100, respiração e tônus 1, reflexo e cor 1: 7 pontos (limite)",
+        "output": {
+          "rows": [],
+          "verdict": {
+            "text": "Tranquilizador (7 a 10)",
+            "locale": "pt-BR",
+            "template": "documented-source"
+          },
+          "level": "low"
+        }
+      },
+      {
+        "name": "FC < 100, apneia, flácido, careta, cianótico: 2 pontos",
+        "output": {
+          "rows": [],
+          "verdict": {
+            "text": "Apgar baixo (0 a 3)",
+            "locale": "pt-BR",
+            "template": "documented-source"
+          },
+          "note": {
+            "text": "Reanimação já deve estar em curso. Apgar ≤ 5 aos 5 minutos: colher gasometria do cordão e manter avaliação a cada 5 minutos até 20 minutos.",
+            "locale": "pt-BR",
+            "template": "documented-source"
+          },
+          "level": "high"
+        }
+      }
+    ],
+    "en": [
+      {
+        "name": "Todos os sinais normais: 10 pontos",
+        "output": {
+          "rows": [],
+          "verdict": {
+            "text": "Reassuring (7 to 10)",
+            "locale": "en",
+            "template": "documented-authored-e26cafd2ba31996d4324"
+          },
+          "level": "low"
+        }
+      },
+      {
+        "name": "FC ≥ 100, os outros com 1 ponto: 6 pontos",
+        "output": {
+          "rows": [],
+          "verdict": {
+            "text": "Moderately abnormal (4 to 6)",
+            "locale": "en",
+            "template": "documented-authored-ae298b235ea9813c009b"
+          },
+          "note": {
+            "text": "If it persists at 5 minutes, reassess every 5 minutes until 20 minutes of life.",
+            "locale": "en",
+            "template": "documented-authored-68d15d685ea700548361"
+          },
+          "level": "mid"
+        }
+      },
+      {
+        "name": "FC ≥ 100, respiração e tônus 1, reflexo e cor 1: 7 pontos (limite)",
+        "output": {
+          "rows": [],
+          "verdict": {
+            "text": "Reassuring (7 to 10)",
+            "locale": "en",
+            "template": "documented-authored-e26cafd2ba31996d4324"
+          },
+          "level": "low"
+        }
+      },
+      {
+        "name": "FC < 100, apneia, flácido, careta, cianótico: 2 pontos",
+        "output": {
+          "rows": [],
+          "verdict": {
+            "text": "Low Apgar (0 to 3)",
+            "locale": "en",
+            "template": "documented-authored-5dd214ff04a5e0e3c193"
+          },
+          "note": {
+            "text": "Resuscitation should already be underway. Apgar ≤ 5 at 5 minutes: obtain cord blood gas and continue assessment every 5 minutes until 20 minutes.",
+            "locale": "en",
+            "template": "documented-authored-768dfc31aafb3f4d28f4"
+          },
+          "level": "high"
+        }
+      }
+    ],
+    "es": [
+      {
+        "name": "Todos os sinais normais: 10 pontos",
+        "output": {
+          "rows": [],
+          "verdict": {
+            "text": "Tranquilizador (7 a 10)",
+            "locale": "es",
+            "template": "documented-authored-e26cafd2ba31996d4324"
+          },
+          "level": "low"
+        }
+      },
+      {
+        "name": "FC ≥ 100, os outros com 1 ponto: 6 pontos",
+        "output": {
+          "rows": [],
+          "verdict": {
+            "text": "Moderadamente anormal (4 a 6)",
+            "locale": "es",
+            "template": "documented-authored-ae298b235ea9813c009b"
+          },
+          "note": {
+            "text": "Si persiste a los 5 minutos, reevaluar cada 5 minutos hasta los 20 minutos de vida.",
+            "locale": "es",
+            "template": "documented-authored-68d15d685ea700548361"
+          },
+          "level": "mid"
+        }
+      },
+      {
+        "name": "FC ≥ 100, respiração e tônus 1, reflexo e cor 1: 7 pontos (limite)",
+        "output": {
+          "rows": [],
+          "verdict": {
+            "text": "Tranquilizador (7 a 10)",
+            "locale": "es",
+            "template": "documented-authored-e26cafd2ba31996d4324"
+          },
+          "level": "low"
+        }
+      },
+      {
+        "name": "FC < 100, apneia, flácido, careta, cianótico: 2 pontos",
+        "output": {
+          "rows": [],
+          "verdict": {
+            "text": "Apgar bajo (0 a 3)",
+            "locale": "es",
+            "template": "documented-authored-5dd214ff04a5e0e3c193"
+          },
+          "note": {
+            "text": "La reanimación ya debe estar en curso. Apgar ≤ 5 a los 5 minutos: obtener gasometría de cordón y mantener la evaluación cada 5 minutos hasta 20 minutos.",
+            "locale": "es",
+            "template": "documented-authored-768dfc31aafb3f4d28f4"
+          },
+          "level": "high"
+        }
+      }
+    ],
+    "fr": [
+      {
+        "name": "Todos os sinais normais: 10 pontos",
+        "output": {
+          "rows": [],
+          "verdict": {
+            "text": "Rassurant (7 à 10)",
+            "locale": "fr",
+            "template": "documented-authored-e26cafd2ba31996d4324"
+          },
+          "level": "low"
+        }
+      },
+      {
+        "name": "FC ≥ 100, os outros com 1 ponto: 6 pontos",
+        "output": {
+          "rows": [],
+          "verdict": {
+            "text": "Modérément anormal (4 à 6)",
+            "locale": "fr",
+            "template": "documented-authored-ae298b235ea9813c009b"
+          },
+          "note": {
+            "text": "Si cela persiste à 5 minutes, réévaluer toutes les 5 minutes jusqu’à 20 minutes de vie.",
+            "locale": "fr",
+            "template": "documented-authored-68d15d685ea700548361"
+          },
+          "level": "mid"
+        }
+      },
+      {
+        "name": "FC ≥ 100, respiração e tônus 1, reflexo e cor 1: 7 pontos (limite)",
+        "output": {
+          "rows": [],
+          "verdict": {
+            "text": "Rassurant (7 à 10)",
+            "locale": "fr",
+            "template": "documented-authored-e26cafd2ba31996d4324"
+          },
+          "level": "low"
+        }
+      },
+      {
+        "name": "FC < 100, apneia, flácido, careta, cianótico: 2 pontos",
+        "output": {
+          "rows": [],
+          "verdict": {
+            "text": "Apgar bas (0 à 3)",
+            "locale": "fr",
+            "template": "documented-authored-5dd214ff04a5e0e3c193"
+          },
+          "note": {
+            "text": "La réanimation doit déjà être en cours. Apgar ≤ 5 à 5 minutes : prélever une gazométrie du cordon et poursuivre l’évaluation toutes les 5 minutes jusqu’à 20 minutes.",
+            "locale": "fr",
+            "template": "documented-authored-768dfc31aafb3f4d28f4"
+          },
+          "level": "high"
+        }
+      }
+    ],
+    "de": [
+      {
+        "name": "Todos os sinais normais: 10 pontos",
+        "output": {
+          "rows": [],
+          "verdict": {
+            "text": "Beruhigend (7 bis 10)",
+            "locale": "de",
+            "template": "documented-authored-e26cafd2ba31996d4324"
+          },
+          "level": "low"
+        }
+      },
+      {
+        "name": "FC ≥ 100, os outros com 1 ponto: 6 pontos",
+        "output": {
+          "rows": [],
+          "verdict": {
+            "text": "Mäßig auffällig (4 bis 6)",
+            "locale": "de",
+            "template": "documented-authored-ae298b235ea9813c009b"
+          },
+          "note": {
+            "text": "Wenn es nach 5 Minuten fortbesteht, alle 5 Minuten bis zu 20 Lebensminuten erneut beurteilen.",
+            "locale": "de",
+            "template": "documented-authored-68d15d685ea700548361"
+          },
+          "level": "mid"
+        }
+      },
+      {
+        "name": "FC ≥ 100, respiração e tônus 1, reflexo e cor 1: 7 pontos (limite)",
+        "output": {
+          "rows": [],
+          "verdict": {
+            "text": "Beruhigend (7 bis 10)",
+            "locale": "de",
+            "template": "documented-authored-e26cafd2ba31996d4324"
+          },
+          "level": "low"
+        }
+      },
+      {
+        "name": "FC < 100, apneia, flácido, careta, cianótico: 2 pontos",
+        "output": {
+          "rows": [],
+          "verdict": {
+            "text": "Niedriger Apgar (0 bis 3)",
+            "locale": "de",
+            "template": "documented-authored-5dd214ff04a5e0e3c193"
+          },
+          "note": {
+            "text": "Die Reanimation sollte bereits laufen. Apgar ≤ 5 nach 5 Minuten: Nabelschnurblutgasanalyse abnehmen und die Beurteilung alle 5 Minuten bis 20 Minuten fortsetzen.",
+            "locale": "de",
+            "template": "documented-authored-768dfc31aafb3f4d28f4"
+          },
+          "level": "high"
+        }
+      }
+    ],
+    "it": [
+      {
+        "name": "Todos os sinais normais: 10 pontos",
+        "output": {
+          "rows": [],
+          "verdict": {
+            "text": "Rassicurante (7 a 10)",
+            "locale": "it",
+            "template": "documented-authored-e26cafd2ba31996d4324"
+          },
+          "level": "low"
+        }
+      },
+      {
+        "name": "FC ≥ 100, os outros com 1 ponto: 6 pontos",
+        "output": {
+          "rows": [],
+          "verdict": {
+            "text": "Moderatamente anormale (4 a 6)",
+            "locale": "it",
+            "template": "documented-authored-ae298b235ea9813c009b"
+          },
+          "note": {
+            "text": "Se persiste a 5 minuti, rivalutare ogni 5 minuti fino a 20 minuti di vita.",
+            "locale": "it",
+            "template": "documented-authored-68d15d685ea700548361"
+          },
+          "level": "mid"
+        }
+      },
+      {
+        "name": "FC ≥ 100, respiração e tônus 1, reflexo e cor 1: 7 pontos (limite)",
+        "output": {
+          "rows": [],
+          "verdict": {
+            "text": "Rassicurante (7 a 10)",
+            "locale": "it",
+            "template": "documented-authored-e26cafd2ba31996d4324"
+          },
+          "level": "low"
+        }
+      },
+      {
+        "name": "FC < 100, apneia, flácido, careta, cianótico: 2 pontos",
+        "output": {
+          "rows": [],
+          "verdict": {
+            "text": "Apgar basso (0 a 3)",
+            "locale": "it",
+            "template": "documented-authored-5dd214ff04a5e0e3c193"
+          },
+          "note": {
+            "text": "La rianimazione dovrebbe già essere in corso. Apgar ≤ 5 a 5 minuti: eseguire emogasanalisi del cordone e mantenere la valutazione ogni 5 minuti fino a 20 minuti.",
+            "locale": "it",
+            "template": "documented-authored-768dfc31aafb3f4d28f4"
+          },
+          "level": "high"
+        }
+      }
+    ],
+    "ar": [
+      {
+        "name": "Todos os sinais normais: 10 pontos",
+        "output": {
+          "rows": [],
+          "verdict": {
+            "text": "مطمئن (7 إلى 10)",
+            "locale": "ar",
+            "template": "documented-authored-e26cafd2ba31996d4324"
+          },
+          "level": "low"
+        }
+      },
+      {
+        "name": "FC ≥ 100, os outros com 1 ponto: 6 pontos",
+        "output": {
+          "rows": [],
+          "verdict": {
+            "text": "غير طبيعي بدرجة متوسطة (4 إلى 6)",
+            "locale": "ar",
+            "template": "documented-authored-ae298b235ea9813c009b"
+          },
+          "note": {
+            "text": "إذا استمر عند 5 دقائق، فأعد التقييم كل 5 دقائق حتى 20 دقيقة من العمر.",
+            "locale": "ar",
+            "template": "documented-authored-68d15d685ea700548361"
+          },
+          "level": "mid"
+        }
+      },
+      {
+        "name": "FC ≥ 100, respiração e tônus 1, reflexo e cor 1: 7 pontos (limite)",
+        "output": {
+          "rows": [],
+          "verdict": {
+            "text": "مطمئن (7 إلى 10)",
+            "locale": "ar",
+            "template": "documented-authored-e26cafd2ba31996d4324"
+          },
+          "level": "low"
+        }
+      },
+      {
+        "name": "FC < 100, apneia, flácido, careta, cianótico: 2 pontos",
+        "output": {
+          "rows": [],
+          "verdict": {
+            "text": "أبغار منخفض (0 إلى 3)",
+            "locale": "ar",
+            "template": "documented-authored-5dd214ff04a5e0e3c193"
+          },
+          "note": {
+            "text": "يجب أن تكون الإنعاش قد بدأ بالفعل. أبغار ≤ 5 عند 5 دقائق: خذ غازات دم الحبل السري وواصل التقييم كل 5 دقائق حتى 20 دقيقة.",
+            "locale": "ar",
+            "template": "documented-authored-768dfc31aafb3f4d28f4"
+          },
+          "level": "high"
+        }
+      }
+    ],
+    "zh": [
+      {
+        "name": "Todos os sinais normais: 10 pontos",
+        "output": {
+          "rows": [],
+          "verdict": {
+            "text": "令人放心（7至10）",
+            "locale": "zh",
+            "template": "documented-authored-e26cafd2ba31996d4324"
+          },
+          "level": "low"
+        }
+      },
+      {
+        "name": "FC ≥ 100, os outros com 1 ponto: 6 pontos",
+        "output": {
+          "rows": [],
+          "verdict": {
+            "text": "中度异常（4至6）",
+            "locale": "zh",
+            "template": "documented-authored-ae298b235ea9813c009b"
+          },
+          "note": {
+            "text": "如果5分钟时仍持续，则每5分钟重新评估一次，直至出生20分钟。",
+            "locale": "zh",
+            "template": "documented-authored-68d15d685ea700548361"
+          },
+          "level": "mid"
+        }
+      },
+      {
+        "name": "FC ≥ 100, respiração e tônus 1, reflexo e cor 1: 7 pontos (limite)",
+        "output": {
+          "rows": [],
+          "verdict": {
+            "text": "令人放心（7至10）",
+            "locale": "zh",
+            "template": "documented-authored-e26cafd2ba31996d4324"
+          },
+          "level": "low"
+        }
+      },
+      {
+        "name": "FC < 100, apneia, flácido, careta, cianótico: 2 pontos",
+        "output": {
+          "rows": [],
+          "verdict": {
+            "text": "Apgar低分（0至3）",
+            "locale": "zh",
+            "template": "documented-authored-5dd214ff04a5e0e3c193"
+          },
+          "note": {
+            "text": "复苏应已开始。5分钟时Apgar ≤ 5：采集脐血气，并每5分钟继续评估一次，直至20分钟。",
+            "locale": "zh",
+            "template": "documented-authored-768dfc31aafb3f4d28f4"
+          },
+          "level": "high"
+        }
+      }
+    ],
+    "ja": [
+      {
+        "name": "Todos os sinais normais: 10 pontos",
+        "output": {
+          "rows": [],
+          "verdict": {
+            "text": "安心できる（7～10）",
+            "locale": "ja",
+            "template": "documented-authored-e26cafd2ba31996d4324"
+          },
+          "level": "low"
+        }
+      },
+      {
+        "name": "FC ≥ 100, os outros com 1 ponto: 6 pontos",
+        "output": {
+          "rows": [],
+          "verdict": {
+            "text": "中等度異常（4～6）",
+            "locale": "ja",
+            "template": "documented-authored-ae298b235ea9813c009b"
+          },
+          "note": {
+            "text": "5分で持続する場合は、20分齢まで5分ごとに再評価する。",
+            "locale": "ja",
+            "template": "documented-authored-68d15d685ea700548361"
+          },
+          "level": "mid"
+        }
+      },
+      {
+        "name": "FC ≥ 100, respiração e tônus 1, reflexo e cor 1: 7 pontos (limite)",
+        "output": {
+          "rows": [],
+          "verdict": {
+            "text": "安心できる（7～10）",
+            "locale": "ja",
+            "template": "documented-authored-e26cafd2ba31996d4324"
+          },
+          "level": "low"
+        }
+      },
+      {
+        "name": "FC < 100, apneia, flácido, careta, cianótico: 2 pontos",
+        "output": {
+          "rows": [],
+          "verdict": {
+            "text": "Apgar低値（0～3）",
+            "locale": "ja",
+            "template": "documented-authored-5dd214ff04a5e0e3c193"
+          },
+          "note": {
+            "text": "蘇生はすでに開始されているはずである。5分時Apgar ≤ 5：臍帯血ガスを採取し、20分まで5分ごとに評価を継続する。",
+            "locale": "ja",
+            "template": "documented-authored-768dfc31aafb3f4d28f4"
+          },
+          "level": "high"
+        }
+      }
+    ],
+    "hi": [
+      {
+        "name": "Todos os sinais normais: 10 pontos",
+        "output": {
+          "rows": [],
+          "verdict": {
+            "text": "संतोषजनक (7 से 10)",
+            "locale": "hi",
+            "template": "documented-authored-e26cafd2ba31996d4324"
+          },
+          "level": "low"
+        }
+      },
+      {
+        "name": "FC ≥ 100, os outros com 1 ponto: 6 pontos",
+        "output": {
+          "rows": [],
+          "verdict": {
+            "text": "मध्यम रूप से असामान्य (4 से 6)",
+            "locale": "hi",
+            "template": "documented-authored-ae298b235ea9813c009b"
+          },
+          "note": {
+            "text": "यदि 5 मिनट पर भी बना रहे, तो जीवन के 20 मिनट तक हर 5 मिनट पर पुनर्मूल्यांकन करें।",
+            "locale": "hi",
+            "template": "documented-authored-68d15d685ea700548361"
+          },
+          "level": "mid"
+        }
+      },
+      {
+        "name": "FC ≥ 100, respiração e tônus 1, reflexo e cor 1: 7 pontos (limite)",
+        "output": {
+          "rows": [],
+          "verdict": {
+            "text": "संतोषजनक (7 से 10)",
+            "locale": "hi",
+            "template": "documented-authored-e26cafd2ba31996d4324"
+          },
+          "level": "low"
+        }
+      },
+      {
+        "name": "FC < 100, apneia, flácido, careta, cianótico: 2 pontos",
+        "output": {
+          "rows": [],
+          "verdict": {
+            "text": "निम्न Apgar (0 से 3)",
+            "locale": "hi",
+            "template": "documented-authored-5dd214ff04a5e0e3c193"
+          },
+          "note": {
+            "text": "पुनर्जीवन पहले से ही शुरू हो जाना चाहिए। 5 मिनट पर Apgar ≤ 5: कॉर्ड ब्लड गैस लें और 20 मिनट तक हर 5 मिनट पर मूल्यांकन जारी रखें।",
+            "locale": "hi",
+            "template": "documented-authored-768dfc31aafb3f4d28f4"
+          },
+          "level": "high"
+        }
+      }
+    ]
+  }
+}

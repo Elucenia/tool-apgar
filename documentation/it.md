@@ -95,3 +95,31 @@ Risultato della formula o classificazione. Interpretazione, condotta e applicabi
 Apache-2.0 si applica solo al codice di ELUCENIA. I diritti su strumenti, pubblicazioni, traduzioni e dati restano ai rispettivi titolari. Conservi LICENSE e NOTICE.
 
 ELUCENIA · Felipe Guedes · Copyright © 2026
+
+## Risultati documentati
+
+Le informazioni seguenti conservano gli output del metodo per esempi sintetici. Non costituiscono una validazione clinica indipendente.
+
+### 1
+
+Rassicurante (7 a 10)
+
+
+### 2
+
+Moderatamente anormale (4 a 6)
+
+Se persiste a 5 minuti, rivalutare ogni 5 minuti fino a 20 minuti di vita.
+
+
+### 3
+
+Rassicurante (7 a 10)
+
+
+### 4
+
+Apgar basso (0 a 3)
+
+La rianimazione dovrebbe già essere in corso. Apgar ≤ 5 a 5 minuti: eseguire emogasanalisi del cordone e mantenere la valutazione ogni 5 minuti fino a 20 minuti.
+

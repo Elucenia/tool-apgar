@@ -95,3 +95,31 @@ Resultado da fórmula ou classificação. Interpretação, conduta e aplicabilid
 Apache-2.0 aplica-se somente ao código da ELUCENIA. Os instrumentos, publicações, traduções e dados mantêm os direitos dos respectivos titulares. Preserve LICENSE e NOTICE.
 
 ELUCENIA · Felipe Guedes · Copyright © 2026
+
+## Resultados documentados
+
+As informações abaixo preservam as saídas do método para exemplos sintéticos. Não constituem validação clínica independente.
+
+### 1
+
+Tranquilizador (7 a 10)
+
+
+### 2
+
+Moderadamente anormal (4 a 6)
+
+Se persistir aos 5 minutos, reavaliar a cada 5 minutos até 20 minutos de vida.
+
+
+### 3
+
+Tranquilizador (7 a 10)
+
+
+### 4
+
+Apgar baixo (0 a 3)
+
+Reanimação já deve estar em curso. Apgar ≤ 5 aos 5 minutos: colher gasometria do cordão e manter avaliação a cada 5 minutos até 20 minutos.
+

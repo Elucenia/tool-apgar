@@ -95,3 +95,31 @@ Résultat de la formule ou de la classification. L’interprétation, la conduit
 Apache-2.0 s’applique uniquement au code d’ELUCENIA. Les droits sur les instruments, publications, traductions et données restent ceux de leurs titulaires respectifs. Conservez LICENSE et NOTICE.
 
 ELUCENIA · Felipe Guedes · Copyright © 2026
+
+## Résultats documentés
+
+Les informations ci-dessous conservent les sorties de la méthode pour des exemples synthétiques. Elles ne constituent pas une validation clinique indépendante.
+
+### 1
+
+Rassurant (7 à 10)
+
+
+### 2
+
+Modérément anormal (4 à 6)
+
+Si cela persiste à 5 minutes, réévaluer toutes les 5 minutes jusqu’à 20 minutes de vie.
+
+
+### 3
+
+Rassurant (7 à 10)
+
+
+### 4
+
+Apgar bas (0 à 3)
+
+La réanimation doit déjà être en cours. Apgar ≤ 5 à 5 minutes : prélever une gazométrie du cordon et poursuivre l’évaluation toutes les 5 minutes jusqu’à 20 minutes.
+

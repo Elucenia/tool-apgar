@@ -207,7 +207,7 @@
       "publicCandidateBankOmitted": true
     },
     "methodVersion": "Apgar 1953:5 sinais 0–2; seguimento AAPACOG 2015 em 1/5 min e repetição se<7",
-    "implementationVersion": "apgar@native-2026-10-03+7820cadf9159",
+    "implementationVersion": "apgar@native-2026-10-05+d5c8d5e8b580",
     "currentMethodSource": "https://pubmed.ncbi.nlm.nih.gov/25899272/",
     "versionEvidence": {
       "status": "variant-and-source-edition-recorded",
@@ -337,7 +337,35 @@
       "clinicalApproval": "not-performed",
       "translationApproval": "not-performed",
       "releaseApproval": "not-performed",
-      "implementationHash": "7820cadf9159d043053484d99d0b1f8cd1648541b5e6445333ffb43140f5e39a"
+      "implementationHash": "d5c8d5e8b5809b5c559914c3aa6d504e26b3a8f5363884c5e8d2dd105d32bd1b",
+      "documentedOutputContract": {
+        "fields": [
+          "level",
+          "verdict",
+          "rows",
+          "note"
+        ],
+        "scope": "Optional documented outputs already produced by the existing scientific method; no new classification or treatment decision.",
+        "sourceExposureReceipt": {
+          "file": "reports/review-20261005-completion/native-result-presentation-r1/applied-output-r1/receipt.json",
+          "sha256": "ad5471530e501b906b966463cef1eb20e9745ac745fc30fb85d3ec4db2a333c3"
+        },
+        "scientificBodiesUnchanged": true,
+        "clinicalApproval": "not-performed",
+        "professionalLanguageApproval": "not-performed"
+      },
+      "technicalBindingHistory": [
+        {
+          "recordedAt": "2026-10-05T23:55:42.176Z",
+          "scope": "Expose existing documented result fields; scientific body and complete input contract unchanged.",
+          "previousImplementationVersion": "apgar@native-2026-10-03+7820cadf9159",
+          "previousImplementationHash": "7820cadf9159d043053484d99d0b1f8cd1648541b5e6445333ffb43140f5e39a",
+          "implementationHash": "d5c8d5e8b5809b5c559914c3aa6d504e26b3a8f5363884c5e8d2dd105d32bd1b",
+          "scientificBodySha256": "e85276683115c11c8a08c490b617391606f7137a1aaae50779ecc2e6796ea25d",
+          "metadataContractHash": "b052b31d6f7984ed141ebd773b7f4f9d97dc4889f5b029c72ac09e2c5a35553e",
+          "exposureReceiptSha256": "ad5471530e501b906b966463cef1eb20e9745ac745fc30fb85d3ec4db2a333c3"
+        }
+      ]
     },
     "limits": "Apgar registra a condição do recém-nascido e a resposta à ressuscitação; não define os passos iniciais da ressuscitação, não diagnostica asfixia e não prevê sozinho mortalidade ou desfecho neurológico individual. O escore atribuído durante ressuscitação não equivale ao obtido em respiração espontânea. Prematuridade, medicamentos maternos e variabilidade do exame podem influenciar o resultado.",
     "limitsEvidence": {
@@ -357,15 +385,15 @@
   },
   "currentSource": {
     "file": "apps/website/private/tool-code/apgar/calculator.js",
-    "bytes": 5094,
-    "sha256": "7820cadf9159d043053484d99d0b1f8cd1648541b5e6445333ffb43140f5e39a"
+    "bytes": 5299,
+    "sha256": "d5c8d5e8b5809b5c559914c3aa6d504e26b3a8f5363884c5e8d2dd105d32bd1b"
   },
-  "sourceToolSha256": "e84549d8853b78dd42265c819fb63aa334098da78aaf6bc2774c6d8562a8015c",
+  "sourceToolSha256": "aa25b86a2ac27a195375c1ea5b9994d01b19c1da5ac9f651e913cf4455c3a34a",
   "omittedFullReferenceBanks": [
     {
       "rows": 243,
       "sha256": "54ba9c5bb13420dd5587f0b66430c1183a07ccc69933dc1316d307787270c6c6",
-      "reason": "Large independent reference bank not bundled; exact evidence scope and file references retained"
+      "reason": "Large independent reference bank not bundled; historical proof scope retained"
     }
   ],
   "clinicalApproval": "not-performed",

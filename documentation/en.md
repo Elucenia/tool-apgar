@@ -95,3 +95,31 @@ Formula or classification result. Interpretation, care and applicability depend 
 Apache-2.0 applies only to ELUCENIA code. Rights to instruments, publications, translations and data remain with their respective holders. Preserve LICENSE and NOTICE.
 
 ELUCENIA · Felipe Guedes · Copyright © 2026
+
+## Documented results
+
+The information below preserves the method outputs for synthetic examples. It does not constitute independent clinical validation.
+
+### 1
+
+Reassuring (7 to 10)
+
+
+### 2
+
+Moderately abnormal (4 to 6)
+
+If it persists at 5 minutes, reassess every 5 minutes until 20 minutes of life.
+
+
+### 3
+
+Reassuring (7 to 10)
+
+
+### 4
+
+Low Apgar (0 to 3)
+
+Resuscitation should already be underway. Apgar ≤ 5 at 5 minutes: obtain cord blood gas and continue assessment every 5 minutes until 20 minutes.
+

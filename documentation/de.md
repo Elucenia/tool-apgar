@@ -95,3 +95,31 @@ Ergebnis der Formel oder Klassifikation. Interpretation, Vorgehen und Anwendbark
 Apache-2.0 gilt nur für den ELUCENIA-Code. Die Rechte an Instrumenten, Veröffentlichungen, Übersetzungen und Daten verbleiben bei den jeweiligen Rechteinhabern. Bewahren Sie LICENSE und NOTICE auf.
 
 ELUCENIA · Felipe Guedes · Copyright © 2026
+
+## Dokumentierte Ergebnisse
+
+Die folgenden Angaben bewahren die Ausgaben der Methode für synthetische Beispiele. Sie stellen keine unabhängige klinische Validierung dar.
+
+### 1
+
+Beruhigend (7 bis 10)
+
+
+### 2
+
+Mäßig auffällig (4 bis 6)
+
+Wenn es nach 5 Minuten fortbesteht, alle 5 Minuten bis zu 20 Lebensminuten erneut beurteilen.
+
+
+### 3
+
+Beruhigend (7 bis 10)
+
+
+### 4
+
+Niedriger Apgar (0 bis 3)
+
+Die Reanimation sollte bereits laufen. Apgar ≤ 5 nach 5 Minuten: Nabelschnurblutgasanalyse abnehmen und die Beurteilung alle 5 Minuten bis 20 Minuten fortsetzen.
+
